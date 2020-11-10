@@ -1,0 +1,23 @@
+@model Registro
+
+<h1>Registro producto</h1>
+
+<div asp-validation-summary="All"></div>
+
+<form action="" method="post">
+    <div class="form-group">
+        <label asp-for="Nombre"></label>
+        <input asp-for="Nombre" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="precio"></label>
+        <input asp-for="precio" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="descripcion"></label>
+        <textarea asp-for="descripcion" class="form-control"></textarea>
+    </div>
+    <div class="form-group text-center">
+        <button class="btn btn-primary">Registrar</button>
+    </div>
+</form>
